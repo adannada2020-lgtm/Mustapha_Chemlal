@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustapha Chemlal | Senior IT Recruiter</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0B192C',
+                            800: '#1E3E62',
+                            700: '#2D5584',
+                        },
+                        sky: {
+                            light: '#BAE6FD',
+                            DEFAULT: '#38BDF8',
+                            dark: '#0284C7'
+                        },
+                        celeste: '#7DD3FC'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para la estructura de Ecuación / Cadena */
+        .chain-connector {
+            position: relative;
+        }
+        .chain-connector::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            width: 20px;
+            height: 2px;
+            background: linear-gradient(90deg, #38BDF8, #7DD3FC);
+            z-index: 1;
+        }
+        @media (max-width: 768px) {
+            .chain-connector::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-navy-900 text-sky-light font-sans antialiased selection:bg-sky selection:text-navy-900">
+
+    <!-- NAVEGACIÓN (AZUL MARINO Y CELESTE) -->
+    <nav class="sticky top-0 z-50 bg-navy-900/90 backdrop-blur border-b border-navy-800 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-hard-hat text-sky text-2xl"></i>
+                <span class="text-xl font-bold text-white tracking-wide">Mustapha Chemlal</span>
+            </div>
+            <div class="space-x-6 text-sm font-medium flex items-center">
+                <a href="#perfil" class="hover:text-celeste transition">Perfil</a>
+                <a href="#herramientas" class="hover:text-celeste transition">Ecosistema</a>
+                <a href="#cv" class="hover:text-celeste transition">Experiencia</a>
+                <a href="#educacion" class="hover:text-celeste transition">Educación</a>
+                <a href="#contacto" class="hover:text-celeste transition">Contacto</a>
+                <a href="https://www.linkedin.com/in/mustafá-especialista-rrhh-it" target="_blank" rel="noopener noreferrer" class="text-sky hover:text-celeste transition text-xl pl-2" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION / PRESENTACIÓN -->
+    <header id="perfil" class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="md:w-2/3 space-y-5">
+            <div class="inline-flex items-center gap-2 bg-navy-800 border border-sky/30 text-celeste text-xs font-semibold px-3 py-1.5 rounded-full">
+                <i class="fas fa-microchip text-sky"></i> +6 años de experiencia en Selección IT
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+                Mustapha Chemlal
+            </h1>
+            <h2 class="text-2xl font-bold text-sky flex items-center gap-3">
+                <i class="fas fa-hard-hat text-celeste"></i> Senior IT Recruiter & Talent Engineer
+            </h2>
+            <p class="text-slate-300 text-base leading-relaxed">
+                Especialista en la construcción y selección de talento IT en España y LATAM[span_0](start_span)[span_0](end_span). Conectando arquitectura técnica y gestión humana mediante metodologías avanzadas de sourcing, evaluación por competencias e inteligencia artificial[span_1](start_span)[span_1](end_span).
+            </p>
+            <div class="pt-4 flex flex-wrap gap-4">
+                <a href="https://www.linkedin.com/in/mustafá-especialista-rrhh-it" target="_blank" rel="noopener noreferrer" class="bg-sky hover:bg-sky-dark text-navy-900 font-bold px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 transition">
+                    <i class="fab fa-linkedin text-xl"></i> Ver perfil de LinkedIn
+                </a>
+                <a href="#contacto" class="border border-sky/40 hover:bg-navy-800 text-celeste font-semibold px-6 py-3 rounded-lg transition">
+                    Contactar
+                </a>
+            </div>
+        </div>
+
+        <!-- FOTO DE PERFIL CON CASCO/AURA TÉCNICA -->
+        <div class="md:w-1/3 flex justify-center">
+            <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-full p-1.5 bg-gradient-to-tr from-sky to-celeste shadow-2xl shadow-sky/20">
+                <img src="foto.jpg" alt="Mustapha Chemlal" class="w-full h-full object-cover rounded-full border-4 border-navy-900">
+                <div class="absolute -bottom-2 -right-2 bg-navy-800 border-2 border-sky p-3 rounded-full text-sky shadow-lg" title="RRHH IT Specialist">
+                    <i class="fas fa-hard-hat text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-24 pb-20">
+
+        <!-- SECCIÓN: HERRAMIENTAS COMO CADENA MOLECULAR / ECUACIÓN TÉCNICA -->
+        <section id="herramientas" class="scroll-mt-24">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-sky font-semibold text-sm tracking-widest uppercase">Ecosistema Tecnológico</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Ecuación & Cadena de Herramientas IT</h2>
+                <p class="text-slate-400 text-sm mt-2">Módulos enlazados de competencias y stack técnico aplicado al Reclutamiento.</p>
+            </div>
+
+            <!-- CADENA MOLECULAR / NODOS -->
+            <div class="space-y-8">
+                
+                <!-- CADENA 1: INTELIGENCIA ARTIFICIAL Y SOURCING -->
+                <div class="bg-navy-800/60 p-6 rounded-2xl border border-navy-700">
+                    <h3 class="text-sky font-bold text-md mb-6 flex items-center gap-2">
+                        <i class="fas fa-atom text-celeste"></i> CADENA 01: SOURCING & INTELIGENCIA ARTIFICIAL
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                        <!-- Nodo 1 -->
+                        <div class="bg-navy-900 border border-sky/40 p-4 rounded-xl text-center relative shadow-md">
+                            <span class="text-xs font-mono text-celeste block mb-1">[Ia-01]</span>
+                            <i class="fas fa-robot text-sky text-2xl mb-2"></i>
+                            <h4 class="text-sm font-bold text-white">IA Assistants</h4>
+                            <p class="text-xs text-slate-400">ChatGPT, Gemini, Copilot</p>
+                            <span class="inline-block mt-2 bg-sky/20 text-sky text-[10px] px-2 py-0.5 rounded font-mono">Dominio: 95%</span>
+                        </div>
+
+                        <!-- Enlace / Conector (+) -->
+                        <div class="hidden md:flex justify-center text-celeste text-xl font-bold">+</div>
+
+                        <!-- Nodo 2 -->
+                        <div class="bg-navy-900 border border-sky/40 p-4 rounded-xl text-center relative shadow-md">
+                            <span class="text-xs font-mono text-celeste block mb-1">[Port-02]</span>
+                            <i class="fas fa-database text-sky text-2xl mb-2"></i>
+                            <h4 class="text-sm font-bold text-white">Gestión de Portales</h4>
+                            <p class="text-xs text-slate-400">Publicación & Seguimiento</p>
+                            <span class="inline-block mt-2 bg-sky/20 text-sky text-[10px] px-2 py-0.5 rounded font-mono">Dominio: 90%</span>
+                        </div>
+
+                        <!-- Enlace / Conector (=) -->
+                        <div class="hidden md:flex justify-center text-celeste text-xl font-bold">=</div>
+
+                        <!-- Resultado de la ecuación -->
+                        <div class="bg-gradient-to-br from-navy-800 to-sky-dark/40 border border-celeste p-4 rounded-xl text-center shadow-lg">
+                            <i class="fas fa-bolt text-celeste text-2xl mb-2"></i>
+                            <h4 class="text-sm font-bold text-white">Headhunting Directo</h4>
+                            <p class="text-xs text-slate-300">Captación pasiva de perfiles Senior/Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CADENA 2: COMUNICACIÓN Y EVALUACIÓN TÉCNICA -->
+                <div class="bg-navy-800/60 p-6 rounded-2xl border border-navy-700">
+                    <h3 class="text-sky font-bold text-md mb-6 flex items-center gap-2">
+                        <i class="fas fa-dna text-celeste"></i> CADENA 02: ENTREVISTA & INFRAESTRUCTURA DE DATOS
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                        <!-- Nodo 1 -->
+                        <div class="bg-navy-900 border border-sky/40 p-4 rounded-xl text-center relative shadow-md">
+                            <span class="text-xs font-mono text-celeste block mb-1">[Com-01]</span>
+                            <i class="fas fa-video text-sky text-2xl mb-2"></i>
+                            <h4 class="text-sm font-bold text-white">Videollamadas</h4>
+                            <p class="text-xs text-slate-400">Teams, Zoom, Jitsi, Skype</p>
+                            <span class="inline-block mt-2 bg-sky/20 text-sky text-[10px] px-2 py-0.5 rounded font-mono">Dominio: 95%</span>
+                        </div>
+
+                        <!-- Enlace / Conector (+) -->
+                        <div class="hidden md:flex justify-center text-celeste text-xl font-bold">+</div>
+
+                        <!-- Nodo 2 -->
+                        <div class="bg-navy-900 border border-sky/40 p-4 rounded-xl text-center relative shadow-md">
+                            <span class="text-xs font-mono text-celeste block mb-1">[Dat-02]</span>
+                            <i class="fas fa-table text-sky text-2xl mb-2"></i>
+                            <h4 class="text-sm font-bold text-white">Hojas de Datos</h4>
+                            <p class="text-xs text-slate-400">Excel & Google Sheets</p>
+                            <span class="inline-block mt-2 bg-sky/20 text-sky text-[10px] px-2 py-0.5 rounded font-mono">Dominio: 90%</span>
+                        </div>
+
+                        <!-- Enlace / Conector (=) -->
+                        <div class="hidden md:flex justify-center text-celeste text-xl font-bold">=</div>
+
+                        <!-- Resultado de la ecuación -->
+                        <div class="bg-gradient-to-br from-navy-800 to-sky-dark/40 border border-celeste p-4 rounded-xl text-center shadow-lg">
+                            <i class="fas fa-user-check text-celeste text-2xl mb-2"></i>
+                            <h4 class="text-sm font-bold text-white">Pipeline de Calidad</h4>
+                            <p class="text-xs text-slate-300">Cumplimiento LOPD e Informes</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PERFILES IT COMO COMPONENTES DE ARQUITECTURA -->
+            <div class="mt-10 bg-navy-800/40 p-6 rounded-2xl border border-navy-700 text-center">
+                <h3 class="text-sm font-bold text-celeste uppercase tracking-wider mb-4 flex justify-center items-center gap-2">
+                    <i class="fas fa-hard-hat text-sky"></i> Áreas Técnicas Bajo Reclutamiento
+                </h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Ciberseguridad</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Robótica</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Cloud (Pública/Privada)</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Big Data</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Blockchain</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Business Intelligence (BI)</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Redes & Sistemas</span>
+                    <span class="bg-navy-900 border border-sky/30 text-sky text-xs px-3 py-1.5 rounded-lg font-mono">Desarrollo Backend/Frontend</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EXPERIENCIA LABORAL (CV) -->
+        <section id="cv" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-3">
+                <i class="fas fa-briefcase text-sky"></i> Experiencia Laboral
+            </h2>
+            <p class="text-slate-400 mb-8">Trayectoria continuada en consultoría y captación de talento técnico.</p>
+
+            <div class="space-y-8 border-l-2 border-sky/40 pl-6 ml-2">
+                
+                <!-- Puesto 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-sky rounded-full border-4 border-navy-900"></div>
+                    <span class="text-xs font-mono text-celeste bg-navy-800 px-2 py-1 rounded">Febrero 2019 - Actualidad</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Senior IT Recruiter</h3>
+                    <p class="text-sky font-medium text-sm">Empresa Española (Consultora RRHH IT)</p>
+                    <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
+                        <li><strong>Liderazgo y gestión:</strong> Coordinación, supervisión y formación de un equipo de Técnicos de Selección IT[span_2](start_span)[span_2](end_span).</li>
+                        <li><strong>Gestión de ofertas:</strong> Carga de candidaturas a portales de clientes, seguimiento, redacción y publicación de ofertas laborales[span_3](start_span)[span_3](end_span).</li>
+                        <li><strong>Análisis:</strong> Coordinación de reuniones semanales exponiendo un análisis crítico de los procesos[span_4](start_span)[span_4](end_span).</li>
+                        <li><strong>Sourcing especializado:</strong> Búsqueda de perfiles en Ciberseguridad, Robótica, Cloud, Big Data, Blockchain, BI, Redes, Sistemas y Desarrollo Backend/Frontend[span_5](start_span)[span_5](end_span).</li>
+                        <li><strong>IA en selección:</strong> Uso activo de ChatGPT, Google Gemini y Microsoft Copilot para la optimización de procesos[span_6](start_span)[span_6](end_span).</li>
+                        <li><strong>Entrevistas técnicas:</strong> Evaluación de candidatos a través de videollamadas (Teams, Zoom, Jitsi, Skype)[span_7](start_span)[span_7](end_span).</li>
+                        <li><strong>Contratación y datos:</strong> Negociación y gestión documental cumpliendo con la LOPD. Informes en MS Excel y almacenamiento en Google Sheets[span_8](start_span)[span_8](end_span).</li>
+                        <li><strong>Partners & Clientes:</strong> Colaboración directa con marcas líderes como <em>Accenture, Minsait, Ayesa, EY, Grupo GFT</em> y clientes en sectores como Seguros, Aeroespacial, Sanitario y Financiero[span_9](start_span)[span_9](end_span).</li>
+                    </ul>
+                </div>
+
+                <!-- Puesto 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-navy-700 rounded-full border-4 border-navy-900"></div>
+                    <span class="text-xs font-mono text-slate-400 bg-navy-800 px-2 py-1 rounded">Septiembre 2017 - Abril 2018</span>
+                    <h3 class="text-xl font-bold text-white mt-2">Atención al Cliente & Operador Telefónico</h3>
+                    <p class="text-sky font-medium text-sm">Vodafone</p>
+                    <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
+                        <li>Recepción de llamadas y atención al cliente mediante SoftPhone X-Lite[span_10](start_span)[span_10](end_span).</li>
+                        <li>Definición del catálogo de terminales móviles del segmento y propuesta de valor del roadmap de productos[span_11](start_span)[span_11](end_span).</li>
+                        <li>Registro de datos en Google Drive, Dropbox y Microsoft Excel[span_12](start_span)[span_12](end_span).</li>
+                        <li>Envío de documentación detallada mediante Microsoft Outlook asegurando el cumplimiento de requisitos de producto[span_13](start_span)[span_13](end_span).</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EDUCACIÓN -->
+        <section id="educacion" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                <i class="fas fa-graduation-cap text-sky"></i> Educación & Formación
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-navy-800 p-6 rounded-xl border border-navy-700">
+                    <span class="text-xs font-mono text-celeste">2014 - 2017</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Licenciatura en Estudios Hispánicos</h3>
+                    <p class="text-slate-400 text-sm mt-1">Université Oujda</p>
+                    <p class="text-slate-300 text-xs mt-3">Especializado en el Análisis Semiótico de Textos Literarios[span_14](start_span)[span_14](end_span).</p>
+                </div>
+
+                <div class="bg-navy-800 p-6 rounded-xl border border-navy-700">
+                    <span class="text-xs font-mono text-celeste">2001 - 2013</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Bachillerato (Ciencias de la Vida y Tierra)</h3>
+                    <p class="text-slate-400 text-sm mt-1">Residencia de Estudiantes de Melilla</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CONTACTO DIRECTO -->
+        <section id="contacto" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-3">
+                <i class="fas fa-paper-plane text-sky"></i> Contacto Directo
+            </h2>
+            <p class="text-slate-400 mb-8">¿Interesado en conectar para procesos de contratación o consultoría IT?</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/mustafá-especialista-rrhh-it" target="_blank" rel="noopener noreferrer" class="bg-navy-800 p-6 rounded-xl border border-navy-700 hover:border-sky transition flex flex-col items-center text-center group">
+                    <i class="fab fa-linkedin text-3xl text-sky group-hover:scale-110 transition-transform mb-3"></i>
+                    <span class="font-semibold text-white">LinkedIn</span>
+                    <span class="text-xs text-celeste mt-1">Ver Perfil Profesional</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:chemlalmustafal@gmail.com" class="bg-navy-800 p-6 rounded-xl border border-navy-700 hover:border-sky transition flex flex-col items-center text-center group">
+                    <i class="fas fa-envelope text-3xl text-sky group-hover:scale-110 transition-transform mb-3"></i>
+                    <span class="font-semibold text-white">Correo Electrónico</span>
+                    <span class="text-xs text-celeste mt-1">chemlalmustafal@gmail.com[span_15](start_span)[span_15](end_span)</span>
+                </a>
+
+                <!-- Ubicación -->
+                <div class="bg-navy-800 p-6 rounded-xl border border-navy-700 flex flex-col items-center text-center">
+                    <i class="fas fa-map-marker-alt text-3xl text-sky mb-3"></i>
+                    <span class="font-semibold text-white">Ubicación</span>
+                    <span class="text-xs text-celeste mt-1">Nador, Marruecos[span_16](start_span)[span_16](end_span)</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 border-t border-navy-800 text-slate-500 text-sm">
+        <p>© Mustapha Chemlal - Senior IT Recruiter. Alojado en GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
